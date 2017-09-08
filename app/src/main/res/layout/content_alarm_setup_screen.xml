@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.soft.clock.alarmclockadvanced.AlarmSetupScreen"
+    tools:showIn="@layout/activity_alarm_setup_screen">
+
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button android:id="@+id/btStart"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:onClick="startRepeatingTimer"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/btStart"
+            tools:context=".WidgetAlarmManagerActivity"
+            tools:layout_editor_absoluteY="10dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <Button android:id="@+id/btCancel"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:onClick="cancelRepeatingTimer"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/btCancel"
+            tools:context=".WidgetAlarmManagerActivity"
+            tools:layout_editor_absoluteY="60dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <Button android:id="@+id/btOneTime"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:onClick="onetimeTimer"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/btOneTime"
+            tools:context=".WidgetAlarmManagerActivity"
+            tools:layout_editor_absoluteY="110dp"
+            tools:layout_editor_absoluteX="8dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

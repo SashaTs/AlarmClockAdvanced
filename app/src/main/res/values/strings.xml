@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AlarmClockAdvanced</string>
+    <string name="action_settings">Settings</string>
+    <string name="btStart">Start</string>
+    <string name="btCancel">Cancel</string>
+    <string name="btOneTime">OneTime</string>
+</resources>
